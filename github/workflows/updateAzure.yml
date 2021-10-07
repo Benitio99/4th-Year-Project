@@ -19,4 +19,4 @@ jobs:
           with:
             azure-devops-project-url: https://dev.azure.com/C00242526/_git/4th%20Year%20Project
             azure-pipeline-name: '4th Year Project Sync'
-            azure-devops-token: ${{ secrets.AZURE_DEVOPS_TOKEN }}
+            azure-devops-token: ${{ secrets.azureRepoPAT }}
