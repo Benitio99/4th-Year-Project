@@ -1,0 +1,22 @@
+name: CI
+
+# Run this workflow every time a commit is pushed to main or a pull request is opened against main
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches: 
+      - main
+
+jobs:
+    build:
+        name: Call Azure Pipeline
+        runs-on: ubuntu-latest
+        steps:
+        - name: Azure Pipelines Action
+          uses: Azure/pipelines@v1
+          with:
+            azure-devops-project-url: https://dev.azure.com/C00242526/_git/4th%20Year%20Project
+            azure-pipeline-name: '4th Year Project Sync'
+            azure-devops-token: ${{ secrets.azureRepoPAT }}
