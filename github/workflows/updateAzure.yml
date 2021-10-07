@@ -18,5 +18,5 @@ jobs:
           uses: Azure/pipelines@v1
           with:
             azure-devops-project-url: https://dev.azure.com/C00242526/_git/4th%20Year%20Project
-            azure-pipeline-name: 'loki4th Year Project Sync'
+            azure-pipeline-name: '4th Year Project Sync'
             azure-devops-token: ${{ secrets.azureRepoPAT }}
