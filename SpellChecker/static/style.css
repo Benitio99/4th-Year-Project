@@ -1,0 +1,112 @@
+
+/*
+Pierce Bennett	C00242526
+23/10/2021
+
+*/
+:root {
+    --mainColour: #E27D60;
+    --accentOne: #85DCBB;
+    --accentTwo: #E8A87C;
+    --accentThree: #C38D9E;
+    --accentFour: #41B3A3;
+}
+body {
+    background-color: cornsilk;
+    font-size: 1.4em;
+    font-family: "Helvetica";
+    position: relative;
+    color: antiquewhite;
+    background-image: repeating-linear-gradient(225deg, var(--accentOne) 0%, var(--accentThree) 40%, var(--accentTwo) 60%, var(--accentOne) 100%);
+    height: 100vh;
+}
+form {
+    position: relative;
+    box-sizing: border-box;
+    width: 50%;
+    height: 90vh;
+    left: 25%;
+    top: 2em;
+    border: .2em ridge var(--accentTwo);
+    background-color: var(--accentOne);
+    border-radius: 5em 0;
+}
+header {
+    height: 5em;
+    background-color: var(--accentThree);
+    color: white;
+    border-radius: 4.8em 0 0 0;
+    border-bottom: .2em ridge var(--accentTwo);
+}
+h2 {
+    margin: 0;
+    padding: 1em;
+    font-size: 1.8em;
+    text-align: center;
+    
+}
+p {
+    text-align: center;
+}
+.inputbox {
+    margin-top: .8em;
+    width: 90%;
+}
+label {
+    width: 100%;
+    padding: 0;
+    margin-left: 4em;
+    user-select: none;
+}
+input, textarea, select{
+    margin-right: 2em;
+    float: right;
+    width: 30%;
+    border: 0px solid black;
+    border-bottom: 4px solid var(--accentTwo);
+    background: inherit;
+}
+textarea {
+    width: 40%;
+}
+.dropdown select {
+    font-size: 1em;
+}
+input:checked + label {
+    font-weight: bold;
+}
+.myButton {
+    top: 3em;
+    position: relative;
+    left: 25%;
+    width: 50%;
+}
+button {
+    
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    text-align: center;
+    border-radius: .5em;
+    cursor: pointer;
+    float: left;
+    color: white;
+}
+button[type=submit] {
+    background-color: var(--accentFour);
+    margin-left: 2em;
+    box-shadow: -3px 6px 8px 2px var(--accentFour);
+}
+
+button[type=reset] {
+    background-color: var(--mainColour);
+    margin-left: 2em;
+    box-shadow: 3px 6px 8px 2px var(--mainColour);
+}
+::placeholder {
+    font-style:italic;
+}
+:focus {
+    outline: 0;
+    border-bottom-color: var(--accentThree);
+}
