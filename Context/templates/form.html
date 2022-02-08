@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block the_content %}
+
+        <form method="POST" action="/processform">
+            <p>
+                Please enter a sample of text below including a mask of &lt;MASK&gt; of the word to be guessed.
+            </p>
+            <p>
+                Example: &quot;I arrived late to the party because of the &lt;MASK&gt;.&quot;
+            </p>
+            <label>
+                Sentence: <input type="textarea" name="sentence"><br>
+            </label>
+            <input type="SUBMIT" value="Do it!">
+        </form>
+
+{% endblock %}

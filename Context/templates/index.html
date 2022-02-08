@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block the_content %}
+
+        <section>
+            <div>
+                <p>
+                    XYThis is a program to attempt to make context error corrections on a piece of text.<br>
+                    Please input the text in the following format:<br>
+                        - desired context error word should be contained within [] e.g. [bell]
+                    Examples:<br>
+                        - "Did anybody hear that [fish] roar outside in the forest?"
+                        - "Have you [accessed] the damages yet?"
+                </p>
+            </div>
+        </section>
+
+        <form method="POST" action="/displaycheats">
+            <label for="inputText">Please input the text in the correct format</label>
+            <input type="textarea" name="inputText">
+            <br>
+            <div class = "myButton">
+                <input type="submit" value="Get Corrections">
+            </div>
+        </form>
+        
+{% endblock %}

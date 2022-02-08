@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{{ the_title }}</title>
+        <link rel="stylesheet" href="static/style.css">
+    </head>
+
+    <body>
+        <header>
+            <h2>{{ the_opening_title }}</h2>
+        </header>
+        
+        {% block the_content %}
+        {% endblock %}
+
+        {% block the_results %}
+        {% endblock %}
+
+    
+        <footer>
+            <p>
+                Copyright 2020 (c) Pierce Bennett & Co. Limited.
+            </p>
+        </footer>
+    </body>
+</html>
